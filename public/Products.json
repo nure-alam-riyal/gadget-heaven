@@ -1,0 +1,181 @@
+ [
+      {
+        "product_id": 1,
+        "product_title": "Laptop Pro X1",
+        "product_image": "https://i.ibb.co.com/2SWHDZr/images-2.jpg",
+        "category": "Laptops",
+        "price": 1299.99,
+        "description": "High-performance laptop with a sleek design.",
+        "specification": ["16GB RAM", "512GB SSD", "Intel Core i7"],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": 2,
+        "product_title": "Gaming Laptop Pro",
+        "product_image": "https://i.ibb.co.com/JrBpJM7/images.png",
+        "category": "Laptops",
+        "price": 1499.99,
+        "description": "High-performance gaming laptop with dedicated GPU.",
+        "specification": ["32GB RAM", "1TB SSD", "NVIDIA GTX 3080"],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": 3,
+        "product_title": "Convertible Laptop Tablet",
+        "product_image": "https://i.ibb.co.com/1dL94G5/download.jpg",
+        "category": "Laptops",
+        "price": 849.99,
+        "description": "2-in-1 convertible laptop with touchscreen.",
+        "specification": ["16GB RAM", "256GB SSD", "Intel Core i5"],
+        "availability": true,
+        "rating": 4.4
+      },
+      {
+        "product_id": 4,
+        
+        "product_title":"Business Laptop G5",
+        "product_image": "https://i.ibb.co.com/Wp7c1Z0/images-1.jpg",
+        "category": "Laptops",
+        "price": 1099.99,
+        "description": "Powerful business laptop with enhanced security features.",
+        "specification": ["8GB RAM", "256GB SSD", "Intel Core i5"],
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": 5,
+        "product_title": "Student Laptop Lite",
+        "product_image": "https://i.ibb.co.com/9vJ5JYC/download3.png",
+        "category": "Laptops",
+        "price": 549.99,
+        "description": "Affordable laptop suitable for students and basic use.",
+        "specification": ["4GB RAM", "128GB SSD", "Intel Core i3"],
+        "availability": true,
+        "rating": 4.2
+      },
+      {
+        "product_id": 6,
+        "product_title": "Ultra-Light Laptop",
+        "product_image": "https://i.ibb.co.com/x679RGM/download2.jpg",
+        "category": "Laptops",
+        "price": 999.99,
+        "description": "Lightweight laptop with long battery life.",
+        "specification": ["8GB RAM", "256GB SSD", "Intel Core i5"],
+        "availability": true,
+        "rating": 4.5
+      },
+      {
+        "product_id": 7,
+        "product_title": "Galaxy-S24-Ultra",
+        "product_image": "https://i.ibb.co.com/R01rkd9/Galaxy-S24-Ultra-Titanium-Gray-8816.jpg",
+        "category": "Phones",
+        "price": 999.99,
+        "description": "Latest smartphone with foldable design and high-end features.",
+        "specification": ["256GB Storage", "12GB RAM", "5G Enabled"],
+        "availability": true,
+        "rating": 4.5
+      },
+      {
+        "product_id": 8,
+        "product_title": "realme-12",
+        "product_image": "https://i.ibb.co.com/3zM5qS2/realme-12-Official-Pioneer-Green-8745.jpg",
+        "category": "Phones",
+        "price": 699.99,
+        "description": "Affordable smartphone with solid performance.",
+        "specification": ["128GB Storage", "8GB RAM", "Triple Camera"],
+        "availability": true,
+        "rating": 4.4
+      },
+      {
+        "product_id": 9,
+        "product_title": "iPhone 15 Pro Max",
+        "product_image": "https://i.ibb.co.com/vwpkTDq/download-2.jpg",
+        "category": "iPhone",
+        "price": 1099.99,
+        "description": "Advanced iPhone model with improved camera and performance.",
+        "specification": ["128GB Storage", "A15 Bionic Chip", "5G Enabled"],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": 10,
+        "product_title": "iPhone 16 ",
+        "product_image": "https://i.ibb.co.com/XsqW9MX/download-1.jpg",
+        "category": "iPhone",
+        "price": 599.99,
+        "description": "Compact iPhone model with powerful features.",
+        "specification": ["64GB Storage", "A14 Bionic Chip", "5G Enabled"],
+        "availability": false,
+        "rating": 4.5
+      },
+      {
+        "product_id": 11,
+        "product_title": "MacBook Air M1",
+        "product_image": "https://i.ibb.co.com/mqw7ZrN/download-3.jpg",
+        "category": "MacBook",
+        "price": 999.99,
+        "description": "Lightweight MacBook with M1 chip for superior performance.",
+        "specification": ["256GB SSD", "8GB RAM", "Apple M1 Chip"],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": 12,
+        "product_title": "Apple MacBook Pro",
+        "product_image": "https://i.ibb.co.com/sb7RvmY/download-4.jpg",
+        "category": "MacBook",
+        "price": 2399.99,
+        "description": "MacBook Pro with powerful performance for professional use.",
+        "specification": ["512GB SSD", "16GB RAM", "Apple M1 Pro Chip"],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": 13,
+        "product_title": "Wireless Charging Pad",
+        "product_image": "https://i.ibb.co.com/q5VwkxQ/download-6.jpg",
+        "category": "Accessories",
+        "price": 59.99,
+        "description": "Fast wireless charging pad compatible with iPhone and Android.",
+        "specification": ["15W Fast Charging", "Qi-Compatible"],
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": 14,
+        "product_title": "Protective Case for iPhone",
+        "product_image": "https://i.ibb.co.com/SvGGWJK/download-5.jpg",
+        "category": "Accessories",
+        "price": 54.99,
+        "description": "Durable protective case for iPhone models.",
+        "specification": ["Shock-Absorbent", "Scratch-Resistant"],
+        "availability": true,
+        "rating": 4.3
+      },
+      {
+        "product_id": 15,
+        "product_title": "Smart Watch Series 5",
+        "product_image": "https://i.ibb.co.com/pKTBF8F/download-8.jpg",
+        "category": "Smart Watches",
+        "price": 249.99,
+        "description": "Stylish smart watch with advanced health monitoring.",
+        "specification": ["Heart Rate Monitor", "Sleep Tracking", "Water-Resistant"],
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": 16,
+        "product_title": "Apple Watch Series 7",
+        "product_image": "https://i.ibb.co.com/BsYZYtG/download-7.jpg",
+        "category": "Smart Watches",
+        "price": 399.99,
+        "description": "Apple's latest smart watch with enhanced features.",
+        "specification": ["Blood Oxygen Sensor", "ECG", "Water-Resistant"],
+        "availability": true,
+        "rating": 4.8
+      }
+    ]
+  
+  
