@@ -1,6 +1,6 @@
 
 
-const Item = ({item}) => {
+const Item = () => {
     
 
     return (

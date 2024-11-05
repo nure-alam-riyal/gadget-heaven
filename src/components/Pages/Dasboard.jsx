@@ -76,7 +76,7 @@ const Dasboard = () => {
     <div className="">
       <form method=" " className="w-full font-bold text-center">
         {/* if there is a button in form, it will close the modal */}
-        <Link to='/'><button onClick={()=>handleClose(product)} className="btn w-full text-black text-xl">Close</button></Link>
+        <Link to='/'><button onClick={()=>handleClose()} className="btn w-full text-black text-xl">Close</button></Link>
       </form>
     </div>
   </div>
