@@ -5,7 +5,7 @@ const Catagori = ({catagorie}) => {
     return (
        
             <NavLink to={`/${type}`}
-             className={(isActive)=>isActive ? "":" " }  > <div className='bg-[#09080F0D] bg-opacity-5 px-10 py-4 rounded-[32px]'> {type}     </div></NavLink>
+             className={({isActive})=>`${isActive ? "bg-[#9538E2] font-bold rounded-[32px]":" " }`}  > <div className='bg-[#09080F0D] bg-opacity-5 px-10 py-4 rounded-[32px]'> {type}     </div></NavLink>
             
     
     );

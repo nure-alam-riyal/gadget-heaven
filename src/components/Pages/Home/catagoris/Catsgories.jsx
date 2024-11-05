@@ -1,26 +1,33 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useLocation, useParams } from "react-router-dom";
 import Product from "../../../Utilitis/product";
 import { useState,useEffect } from "react";
+// import Catagori from "../../../Utilitis/catagori";
 
 const Catsgories = () => {
     const [products1,setProducts]=useState([])
     const {catagoris}=useParams()
     const products=useLoaderData()
-    const spreadProduct=[...products]
+    const {pathname}=useLocation();
+    // const spreadProduct=[...products]
+    console.log(pathname)
+ 
     
   useEffect(() =>{
   
-const fillter=spreadProduct.filter((product)=>product.category== catagoris)
-    
-if(fillter.length>0){
-    setProducts(fillter)
-}
+                        // fetch("../../../../../public/Products.json").then(res=>res.json()).then(data=>setProducts(data))
+                        const fillter=[...products].filter((product)=>product.category== catagoris)
+    if(fillter.length>0){
+           
+            setProducts(fillter)
+        }
+        else if(!pathname)
+            setProducts(products)
+        else
+        setProducts(products)
 
-else if(fillter.length==0)
-    setProducts(products)
-}, [catagoris, products, spreadProduct])
+}, [catagoris,products,pathname])
   
-  
+  //riyaldir==
 
 
     return (

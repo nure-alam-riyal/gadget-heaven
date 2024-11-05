@@ -19,9 +19,12 @@ const Home = () => {
     },[])
 
     return (
-        <div className="w-11/12 mx-auto p-12">
+
+
+
+        <div className="w-11/12 mx-auto px-12">
         <div className="relative  ">
-        <div className="hero rounded-2xl bg-[#9538E2] pb-48 mb-80">
+        <div className="hero rounded-2xl rounded-t-none bg-[#9538E2] pb-48 mb-80">
   <div className="hero-content  text-center mt-10">
     <div className="w-8/12 text-white">
       <h1 className="text-5xl m-0 font-bold">Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
@@ -45,7 +48,7 @@ const Home = () => {
         <div className='md:flex gap-5'>
             <div className='flex flex-col gap-4 w-1/4 border p-4 rounded-lg '>
                 {
-                    catagoris.map((catagorie)=><Catagori key={catagorie} catagorie={catagorie} ></Catagori>)
+                    catagoris.map((catagorie,id)=><Catagori key={id} catagorie={catagorie} ></Catagori>)
                     
                 }
             </div>

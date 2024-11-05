@@ -1,8 +1,10 @@
 import { FaShoppingCart } from "react-icons/fa";
 import { GiEternalLove } from "react-icons/gi";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import ReactStars from "react-rating-stars-component";
+import { HandleCart } from "../Layout/Layout";
+import Item from "../Utilitis/item";
 
 
 
@@ -12,18 +14,27 @@ const Details = () => {
     const [product,setProduct]=useState([])
     const products=useLoaderData()
     const {product_id}=useParams()
+    const {handleCart,handleWshilist}=useContext(HandleCart)
+
+    const handleCart1=(id)=>{
+             handleCart(id)
+    }
+    const handleWshilist1=(id)=>{
+        handleWshilist(id)
+        console.log(id)
+}
   
   
         useEffect(()=>{
-        const  findProduct = products.find((product)=>product.product_id,parseInt(product_id))
+        const  findProduct = products.find((product)=>product.product_id === parseInt(product_id))
         setProduct(findProduct)
        
         },[product_id, products])
    
-  console.log(product)
+//   console.log(product)
   const {product_image,product_title,price,description,specification,availability,rating} =product;
  
-    console.log(specification)
+    // console.log(specification)
     return (
         <div>
             <div className="relative  ">
@@ -38,8 +49,9 @@ const Details = () => {
     </div>
   </div>
 </div>
-<div className='border border-gray-300 p-4 bg-white w-8/12 mx-auto absolute top-[65%] left-[18%] rounded-[32px] border-white'>
-    <div className="flex gap-4">
+
+<div className=' border border-black border-opacity-50 b  p-4  bg-white w-8/12 mx-auto absolute top-[65%] left-[18%] rounded-[32px] '>
+    <div className="flex gap-4  ">
         <div className=" bg-gray-50 w-5/12 h-full"><img className=" bg-gray-200 w-full" src={product_image} alt="" /></div>
         <div className="w-7/12 text-[#09080F] space-y-5">
         <h2 className="text-[28px] font-semibold ">{product_title}</h2>
@@ -49,9 +61,9 @@ const Details = () => {
         <div> 
             <h3 className="font-bold text-xl">Specification:</h3>
             <ol className=" list-decimal opacity-60 ml-10">
-                {
-// [...specification].map((data,ind)=><li key={ind}>{data}</li>)
-                }
+               
+                 <Item item={specification}></Item>
+               
             </ol>
 
         </div>
@@ -70,11 +82,11 @@ const Details = () => {
             </div>
         </div>
         <div className="flex gap-4 items-center">
-           <div className="text-white flex gap-1 items-center px-3 py-2 rounded-3xl text-lg bg-[#9538E2]">
+           <div onClickCapture={()=>handleCart1({product})} className="text-white flex gap-1 items-center px-3 py-2 rounded-3xl text-lg bg-[#9538E2]">
             <p>Add to Cart</p>
             <FaShoppingCart></FaShoppingCart>
            </div>
-            <button className="p-2 border rounded-full">
+            <button onClick={()=>handleWshilist1({product})} className="p-2 border rounded-full">
                 <GiEternalLove></GiEternalLove>
             </button>
         </div>

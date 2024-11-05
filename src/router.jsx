@@ -5,15 +5,18 @@ import Statistics from "./components/Pages/Statistics";
 import Dasboard from "./components/Pages/Dasboard";
 import Details from "./components/Pages/Details";
 import Catsgories from "./components/Pages/Home/catagoris/Catsgories";
+import Riyal from "./components/Pages/Riyal";
+import ErrorPage from "./components/Pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
+    errorElement:<ErrorPage></ErrorPage>,
     children : [
       {
         path:"/",
-        loader:()=>fetch('/Products.json'),
+        loader:()=>fetch('../public/Products.json'),
         element:<Home></Home>,
         children:[
           {
@@ -38,6 +41,10 @@ const router = createBrowserRouter([
         path:'/home/:product_id',
         loader:()=>fetch('/Products.json'),
         element:<Details></Details>
+      },
+      {
+        path:'/riyal',
+        element:<Riyal></Riyal>
       }
     ],
   },
